@@ -23,11 +23,16 @@ Constraints:
 -10^6 <= nums[i] <= 10^6
 */
 
-
-function helper( ){
-
-}
-
 const runningSum = function(nums) {
-    return nums;
+    let counter = 0;
+    let newArray = [];
+    for (let index = 0; index < nums.length; index++) {
+        counter += nums[index];
+        newArray.push(counter);
+        console.log(newArray);
+    }
+    return newArray;
 };
+
+let demo = [3,1,2,10,1];
+runningSum(demo)
