@@ -34,5 +34,16 @@ const runningSum = function(nums) {
     return newArray;
 };
 
+let runningSumOptimization = function(nums) {
+    for (let index = 0; index < nums.length; index++) {
+        if (index === 0) {
+            nums[index] = nums[index];
+        } else {
+            nums[index] += nums[index-1];
+        }
+    }
+    return nums;
+};
+
 let demo = [3,1,2,10,1];
 runningSum(demo)
