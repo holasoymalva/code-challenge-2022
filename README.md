@@ -2,7 +2,7 @@
 
 ### Challenges
 
-* [🗓 01/junio ]()
+* [🗓 01/junio ](./challenges/01-file.js)
 * [🗓 02/junio ]()
 * [🗓 03/junio ]()
 * [🗓 04/junio ]()
