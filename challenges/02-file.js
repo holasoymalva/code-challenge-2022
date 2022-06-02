@@ -27,13 +27,18 @@ n == matrix[i].length
 let matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
 const transpose = function(matrix) {
-    for (const column in matrix) {
-        if (Object.hasOwnProperty.call(matrix, column)) {
-            const element = matrix[column];
-            console.log("element : " , element);
+    let newMatrix = [];
+    let row = matrix.length;
+    let col = matrix[0].length;
+    for (let indexCol = 0; indexCol < row; indexCol++) {
+        for (let indexRow = 0; indexRow < col; indexRow++) {
+            if(!newMatrix[indexRow]){
+                newMatrix[indexRow] = [];
+            } 
+            newMatrix[indexRow][indexCol] = matrix[indexCol][indexRow];
         }
     }
-    return matrix;
+    return newMatrix;
 };
 
 transpose(matrix);
